@@ -10,5 +10,4 @@
     -device virtio-blk-device,drive=cloud \
     -drive if=none,id=cloud,file=cloud.img \
     -device virtio-net-device,netdev=user0 \
-    -netdev user,id=user0 \
-    -redir tcp:2222::22
+    -netdev user,id=user0
