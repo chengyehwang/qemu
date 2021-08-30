@@ -3,7 +3,7 @@ qemu:
 	wget https://download.qemu.org/qemu-6.1.0.tar.xz
 	tar xvf qemu-6.1.0.tar.xz
 build:
-	cd qemu-6.1.0 ; ./configure --prefix=${PWD}/local
+	cd qemu-6.1.0 ; ./configure --prefix=${PWD}/local --target-list=aarch64-softmmu
 	cd qemu-6.1.0 ; make
 
 image_arm:
