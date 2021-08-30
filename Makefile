@@ -5,6 +5,7 @@ qemu:
 build:
 	cd qemu-6.1.0 ; ./configure --prefix=${PWD}/local --target-list=aarch64-softmmu
 	cd qemu-6.1.0 ; make
+	cd qemu-6.1.0 ; make install
 
 image_arm:
 	wget https://cloud-images.ubuntu.com/releases/bionic/release/ubuntu-18.04-server-cloudimg-arm64.img
