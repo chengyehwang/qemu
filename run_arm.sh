@@ -1,5 +1,5 @@
-qemu-system-aarch64 \
-    -smp 2 \
+#qemu-system-aarch64 \
+./local/bin/qemu-system-aarch64 \
     -m 1024 \
     -M virt \
     -cpu cortex-a57 \
